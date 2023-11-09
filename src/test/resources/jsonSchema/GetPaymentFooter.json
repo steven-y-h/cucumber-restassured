@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "string"
+    },
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "paymentMethod": {
+              "type": "string"
+            },
+            "paymentEngine": {
+              "type": "string"
+            },
+            "bankShortName": {
+              "type": "string"
+            },
+            "imageUrl": {
+              "type": "string"
+            },
+            "creditCard": {
+              "type": "boolean"
+            },
+            "installment": {
+              "type": "boolean"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
